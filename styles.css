@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {text-decoration: none; color: whitesmoke;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.navbar{
+  display: flex;
+  justify-content:center;
+  justify-content: space-around;
+  border: 2px solid #7AA37F;
+  background: #7AA37F;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+}
+button{
+  font-family: 'Maven Pro', sans-serif;
+    text-decoration: none;
+}
+
+
+.home{
+  background: #7AA37F;
+  font-size: 20px;
+  width: 100%;
+  height: 70px;
+  border: 10px solid #7AA37F;
+  color: white;
+
+
+}
+.online-stores{
+  font-size: 20px;
+  background: #7AA37F;
+  width: 100%;
+  height: 70px;
+  border: 10px solid #7AA37F;
+}
+.sus-tips{
+  font-size: 20px;
+  background: #7AA37F;
+  width: 100%;
+  height: 70px;
+  border: 10px solid #7AA37F;
+}
+
+.goals{
+  font-size: 20px;
+  background: #7AA37F;
+  width: 100%;
+  height: 70px;
+  border: 10px solid #7AA37F;
+}
+.abt-us{
+  font-size: 20px;
+  background: #7AA37F;
+  width: 100%;
+  height: 70px;
+  border: 10px solid #7AA37F;
+}
+h1{
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.distribution-map {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* .centered-y {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+.content {
+ text-align: center;
+}
+
+
+.distribution-map > img {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAP KEY */
+.mapkey{
+  background-color: White;
+  border-radius: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.legend{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 50%;
+}
+.box{
+	width:20px;
+	height:20px;
+  margin: 10px;
+}
+.thriftbox{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30%;
+}
+.bulkbox{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30%;
+}
+.farmbox{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30%;
+}
+.susbox{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30%;
+}
+.pink{
+	background:#FEA0D2;
+}
+.blue{
+	background:#A0CCFE;
+}
+.purple{
+	background:#CFA0FE;
+}
+.orange{
+  background:#FEC35E;
+}/* END OF MAP KEY */
+.distribution-map .map-point {
+  cursor: pointer;
+  outline: none;
+  z-index: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+  -o-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+  -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out, z-index 0.25s ease-in-out;
+  -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
+  -webkit-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+  transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+  background: #e69c53;
+  border: 4px solid #fff;
+}
+.distribution-map .map-point .content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+
+  overflow: overlay;
+}
+.distribution-map .map-point:active, .distribution-map .map-point:focus {
+  margin: auto;
+  padding: auto;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  width: auto;
+  height: auto;
+  color: black;
+  z-index: 1;
+  -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+}
+.distribution-map .map-point:active .content, .distribution-map .map-point:focus .content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  -webkit-transition-delay: 0.25s, 0s, 0s;
+  -webkit-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  overflow: hidden;
+}
+.distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
+  color: #afe1fa;
+}
+
+/*GOALS*/
+
+body{
+  background: whitesmoke;
+}
+h1{
+  margin: 20px;
+}
+.content {
+  margin: 10px auto;
+  width: 400px;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background: #7AA37F;
+}
+
+.to-do {
+  width: 300px;
+  margin: 25px auto 5px auto;
+  padding: 5px;
+  font-size: 90%;
+}
+
+.submit-btn {
+font-family: 'Maven Pro', sans-serif;
+  width: 300px;
+  padding: 5px;
+  margin: 5px auto 25px auto;
+  background: #E8CBB9 ;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 100%;
+}
+
+.card-container {
+  font-family: 'Maven Pro', sans-serif;
+  padding: 30px;
+  background: #7AA37F;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.to-do-card {
+font-family: 'Maven Pro', sans-serif;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+.delete-btn{
+  margin-right: 10px;
+  margin-left: 10px;
+  background: #E8CBB9;
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;;
+  font-size: 30px;
+}
+
+.profiles1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  font-size: 37px;
+
+}
+
+.profiles2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-size: 37px
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+
+.distribution-map .thriftStores .map-point {
+  background: #FEA0D2;
+}
+.distribution-map .bulkGrocery .map-point {
+  background: #A0CCFE;
+}
+.distribution-map .susstores .map-point {
+  background: #CFA0FE;
+}
+.distribution-map .farmersMarket .map-point {
+  background: #FEC35E;
+}
+/* sustips */
+.lion{
+  display: flex;
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  bottom: 0;
+  position: fixed;
+}
+.rhino{
+  display: flex;
+  height: 250px;
+  width: 200px;
+  object-fit: cover;
+  bottom: 0;
+  right: 200;
+  position: fixed;
+}
+.message{
+margin-top: 30px;
+font-size:  30px;
+}
+
+.picsforonline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.click{
+  width: 15%;
+  height: 10%;
+  background-color: #B0BC98;
+  font-size: 20px;
+font-family: 'Maven Pro', sans-serif;
+}
+.message{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 30px;
+}
+/* sustips */
+
+
+.groupp {
+  height: 363px;
+  width: 484px;
+  margin-bottom: 30px;
+}
